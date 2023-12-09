@@ -10,6 +10,7 @@ Each Individual tutorial has its own numbered folder.
 
 1. [Making a Clock](https://catlikecoding.com/godot/introduction/1-making-a-clock/)
 2. [Programming a Clock](https://catlikecoding.com/godot/introduction/2-programming-a-clock/)
+3. [Many Clocks](https://catlikecoding.com/godot/introduction/3-many-clocks/)
 
 This is a work in progress. More parts will be added in due time.
 
