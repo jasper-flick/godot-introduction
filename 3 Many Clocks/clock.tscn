@@ -20,11 +20,11 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
 
-[node name="Clock" type="RigidBody2D" node_paths=PackedStringArray("collisionShape", "visualization", "second_arm", "minute_arm", "hour_arm")]
+[node name="Clock" type="RigidBody2D" node_paths=PackedStringArray("collision_shape", "visualization", "second_arm", "minute_arm", "hour_arm")]
 position = Vector2(576, 324)
 physics_material_override = SubResource("PhysicsMaterial_rd4do")
 script = ExtResource("1_7gxrb")
-collisionShape = NodePath("CollisionCircle")
+collision_shape = NodePath("CollisionCircle")
 visualization = NodePath("Visualization")
 second_arm = NodePath("Visualization/SecondArm")
 minute_arm = NodePath("Visualization/MinuteArm")

@@ -20,7 +20,7 @@ enum StartTimeMode {
 @export_range(0, 59) var start_second := 0
 
 @export_group("Nodes")
-@export var collisionShape: CollisionShape2D
+@export var collision_shape: CollisionShape2D
 @export var visualization: Node2D
 @export_subgroup("Arms")
 @export var second_arm: Node2D
@@ -54,6 +54,6 @@ func _process(delta: float) -> void:
 
 func set_uniform_scale(scale_factor: float) -> void:
 	var scale_vector = Vector2(scale_factor, scale_factor)
-	collisionShape.scale = scale_vector
+	collision_shape.scale = scale_vector
 	visualization.scale = scale_vector
 	mass = scale_factor * scale_factor
