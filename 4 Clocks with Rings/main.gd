@@ -28,7 +28,6 @@ func _on_size_changed() -> void:
 	var window_size := get_window().size
 	_window_width = window_size.x
 	bottom.position.y = window_size.y + 2.0 * clock_radius
-	#var ground := $Ground as Node2D
 	ground.position = Vector2(
 			0.5 * window_size.x,
 			window_size.y + 0.5 * clock_radius
@@ -37,7 +36,6 @@ func _on_size_changed() -> void:
 
 
 func _on_spawn_timer_timeout() -> void:
-	#var window_size := get_window().size
 	var clock := clock_scene.instantiate() as Clock
 	clock.start_time = Clock.StartTimeMode.RANDOM_TIME
 	clock.time_scale = randf_range(time_scale_min, time_scale_max)
